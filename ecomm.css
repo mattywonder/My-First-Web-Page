@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 5px solid #1098ad;
+  width: 865px;
+  margin: 50px auto;
+  padding: 0 px;
+}
+
+h2 {
+  background-color: #1098ad84;
+  margin: 0;
+
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 25px;
+  width: auto;
+  border-bottom: 5px solid #1098ad;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.price {
+  font-size: 22px;
+}
+
+.free {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: grey;
+}
+
+h3 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.product-list {
+  padding: 0 20px;
+  list-style: circle;
+  margin-bottom: 15px;
+}
+
+button {
+  border: none;
+  border-top: 5px solid #1098ad;
+  background-color: #1098ad84;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #1098ad84;
+}
+
+.info:link {
+  text-decoration: none;
+}
+
+.info:visited {
+  color: #1098ad84;
+}
+
+.info:hover {
+  color: #1098ad84;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.info:active {
+  background-color: black;
+}
+
+.content {
+  padding: 0 20px;
+}
+
+.shoe-img {
+  border-bottom: 5px solid #1098ad;
+}

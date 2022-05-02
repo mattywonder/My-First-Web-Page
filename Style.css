@@ -1,4 +1,206 @@
-h1 {
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* THIS IS A LIST SELECTOR
+h1,
+h2,
+h3,
+h4,
+p,
+li {
   font-family: sans-serif;
+  color: #444;
+} */
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px #1098ad solid;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.hero-header {
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #1098ad;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  /* font-family: sans-serif; */
+  /* line-height: 1.5; */
+  margin: 10px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* THIS IS A DECENDANT SELECTOR */
+/* footer p {
+  font-size: 16px;
+} */
+
+/* THIS IS A NESTED DECENDEANT SELECTOR
+this means when you have a decendant inside
+a decendant */
+/* article header p {
+  font-size: 16px;
+  font-family: sans;
+  font-style: italic;
+} */
+
+/* THIS IS THE ID SELECTOR
+It has the # in front of it */
+/* #author {
+  font-family: serif;
+  font-size: 16px;
+} */
+#copyright {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin: 15px 0;
+  margin-left: 20px;
+}
+
+/* THIS IS THE CLASS SELECTOR
+It has the . in fornt of it */
+.related-author {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bullet-points {
+  list-style: none;
+}
+
+/* THIS IS AN ELEMENT SELECTOR
+ */
+/* aside {
+  background-color: #f7f7f7;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1098ad;
+} */
+
+/* WE CAN HAVE DIFFERENT VARIANTS OF THE BORDER ATTRIBUTE
+SUCH AS Top, bottom, left right */
+/* aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  border-left: 5px solid #1098ad;
+  border-right: 5px solid #1098ad;
+} */
+
+/* THIS IS TO CALL A PSEUDO-CALL 
+You can call the first-child, the last-child,
+and a specific number using the nth */
+/* li:nth-child(3) {
+  font-weight: bold;
+  font-family: sans-serif;
+  color: brown;
+} */
+
+/* THIS PSEUDO CLASS TARGETS ANCHOR ELEMENTS WITH HREF
+AND THE PSEUDO CLASS FOR ANCHOR ELEMENT MUST BE IN
+THE FOLLOWING ORDER
+LVHA  */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #5121d5;
+  font-style: italic;
 }
