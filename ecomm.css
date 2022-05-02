@@ -88,5 +88,6 @@ button:hover {
 }
 
 .shoe-img {
+  margin: 0 20px;
   border-bottom: 5px solid #1098ad;
 }

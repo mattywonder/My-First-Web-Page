@@ -29,7 +29,6 @@ body {
   background-color: #f7f7f7;
   padding: 20px;
   margin-bottom: 60px;
-  height: 80px;
 }
 
 .hero-header {
@@ -136,9 +135,7 @@ It has the # in front of it */
 } */
 #copyright {
   font-family: sans-serif;
-  font-size: 12px;
-  margin: 15px 0;
-  margin-left: 20px;
+  font-size: 13px;
 }
 
 /* THIS IS THE CLASS SELECTOR
