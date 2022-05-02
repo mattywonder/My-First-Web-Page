@@ -41,7 +41,13 @@ body {
 }
 
 nav {
-  font-size: 18px;
+  font-size: 23px;
+}
+
+nav a:link {
+  background-color: ;
+  margin: 20px;
+  display: block;
 }
 
 article {
@@ -63,7 +69,7 @@ h3 {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 40px;
   text-transform: uppercase;
   font-style: italic;
   color: #1098ad;
