@@ -23,6 +23,7 @@ body {
 .container {
   width: 700px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-header {
@@ -33,6 +34,8 @@ body {
 
 .hero-header {
   margin-bottom: 40px;
+
+  position: relative;
 }
 
 .hero-image {
@@ -41,13 +44,14 @@ body {
 }
 
 nav {
-  font-size: 23px;
+  font-size: 18px;
+  /* text-align: left; */
 }
 
 nav a:link {
-  background-color: ;
-  margin: 20px;
-  display: block;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 article {
@@ -56,8 +60,8 @@ article {
 
 aside {
   background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
+  border-top: 5px dotted #1098ad;
+  border-bottom: 5px dotted #1098ad;
   padding: 50px 0;
   width: 500px;
 }
@@ -69,15 +73,38 @@ h3 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
   color: #1098ad;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+/* THIS IS AN EXAMPLE OF THE AFTER PSEUDO ELEMENT 
+IN THIS EXAMPLE, WE CREATED AN AFTER-PSEUDO ELEMENT 
+FOR THE H2 ELEMENT. HENCE WE HAVE h2::after */
+h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: #444;
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -85,6 +112,19 @@ h3 {
   margin-bottom: 20px;
   margin-top: 40px;
 }
+
+/* THIS IS A PSEUDO ELEMENT COMBINED WITH 
+ADJACENT SIBLING. 
+ADJACENT SIBLING SIMPLY MEANS THE FIRST 
+ ELEMENT DIRECTLY AFTER THE INITIAL ELEMENT. 
+ LIKE IN THIS CASE, THE FIRST PARAGRAPH 
+ AFTER THE H3 ELEMENT. AND THE SELECTOR FOR THE 
+ ADJACENT SIBLING IS THE (+) PLUS SIGN. */
+
+/* h3 + p::first-line {
+  color: red;
+  font-size: 50px;
+} */
 
 h4 {
   font-size: 20px;
@@ -117,6 +157,21 @@ li:first-child {
 
 li:last-child {
   margin-bottom: 0;
+}
+
+.like {
+  font-size: 22px;
+  padding: 20px;
+
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.like::first-letter {
+  color: red;
 }
 
 /* THIS IS A DECENDANT SELECTOR */
